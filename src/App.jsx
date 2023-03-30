@@ -1,20 +1,19 @@
-import React, { Fragment } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Header from './components/Header';
-import Container from './components/Container';
-import AddForm from './components/AddForm';
-import BookContainer from './components/Book/BookContainer';
+import React, { Fragment } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/Header";
+import Container from "./components/Container";
+import AddForm from "./components/AddForm";
+import BookContainer from "./components/Book/BookContainer";
 
 const App = () => {
   return (
-     <Fragment>
+    <Fragment>
       <Header />
       <Container>
         <AddForm />
         <BookContainer />
       </Container>
-     </Fragment>
-  
+    </Fragment>
   );
 };
 
