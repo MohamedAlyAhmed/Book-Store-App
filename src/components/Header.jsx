@@ -2,12 +2,12 @@ import React, { Fragment } from "react";
 import { useSelector } from "react-redux";
 
 const Header = () => {
-  const { hasError } = useSelector((state) => state.books);
+  const { error } = useSelector((state) => state.books);
   return (
     <Fragment>
-      {hasError && (
+      {error && (
         <div class="alert alert-danger mb-0" role="alert">
-          Failed to Fetch Data!
+          {error}
         </div>
       )}
       <nav className="navbar navbar-dark bg-dark text-center ">

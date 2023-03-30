@@ -18,20 +18,19 @@ export const getBooks = createAsyncThunk(
 
 const bookSlice = createSlice({
   name: "books",
-  initialState: { books: [], isLoading: false, hasError: false },
+  initialState: { books: [], isLoading: false, error: null },
   extraReducers: {
     [getBooks.pending]: (state, action) => {
       state.isLoading = true;
-      state.hasError = false;
+      state.error = null;
     },
     [getBooks.fulfilled]: (state, action) => {
       state.isLoading = false;
-      state.hasError = false;
       state.books = action.payload;
     },
     [getBooks.rejected]: (state, action) => {
       state.isLoading = false;
-      state.hasError = true;
+      state.error = action.payload;
     },
   },
 });
