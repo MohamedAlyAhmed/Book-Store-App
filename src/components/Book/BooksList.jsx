@@ -1,7 +1,7 @@
 import React from "react";
 
 const BooksList = ({ isLoading, books }) => {
-  const booksList = books.map((book) => (
+  const booksList = books.length > 0 ? books.map((book) => (
     <li
       key={book.id}
       className="list-group-item d-flex justify-content-between align-items-center"
@@ -16,7 +16,7 @@ const BooksList = ({ isLoading, books }) => {
         </button>
       </div>
     </li>
-  ));
+  )): 'No Books Avaliable !';
   return (
     <div>
       <h2>Books List</h2>

@@ -10,7 +10,7 @@ const BookContainer = () => {
   const { isLoading, books } = useSelector((state) => state.books);
   useEffect(() => {
     dispatch(getBooks());
-  }, []);
+  }, [dispatch]);
 
   return (
     <Fragment>

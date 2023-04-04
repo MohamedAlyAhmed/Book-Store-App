@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <Fragment>
       {error && (
-        <div class="alert alert-danger mb-0" role="alert">
+        <div className="alert alert-danger mb-0" role="alert">
           {error}
         </div>
       )}
