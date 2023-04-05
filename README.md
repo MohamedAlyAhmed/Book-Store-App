@@ -1,5 +1,5 @@
 # Book-Store-App
-Our Book Store App is a web application that allows users to add books to a list and delete books from the list and read details. The app has been designed using React and Redux toolkit. Data is stored using API server.
+Our Book Store App is a web application that allows users to add books to a list and delete books from the list and read details. The app has been designed using React (Create By Vite) and Redux toolkit. Data is stored using JsonServer (uploded in https://glitch.com/).
 
 ## Live Demo
 [Click me to go to Live Demo](https://book-store-app-rtk.vercel.app/)
@@ -37,6 +37,7 @@ Open your web browser and navigate to http://localhost:5173/ to view the applica
 ### Book Store App has the following features:
 
 - Add Book: Users can add a book to the list by providing the title, price, and description of the book.
+- Read : Users can Read title, price, and description of the book.
 - Delete Book: Users can delete a book from the list by clicking the delete button next to the book.
 - List: Users can view the list of books that have been added.
 - Redux Toolkit: The app uses Redux toolkit to manage the state of the app.
